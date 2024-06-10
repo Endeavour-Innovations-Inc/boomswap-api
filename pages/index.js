@@ -4,7 +4,7 @@ export default function Home() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('/data/tokens.json')
+    fetch('https://boomswap-api.netlify.app/.netlify/functions/fetchTokens')
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error('Error fetching JSON:', error));
