@@ -1,4 +1,4 @@
-import tokensData from '../data/tokens.json'
+import tokensData from '../public/data/tokens.json'
 
 export default function Home() {
   return (
